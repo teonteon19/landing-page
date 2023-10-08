@@ -1,0 +1,63 @@
+/*body*/
+
+
+
+/* header-container or hero*/
+
+.hero{
+    background-color: #1F2937;
+    color: white;
+}
+
+.header-container p{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header-container a{
+    font-size: 18px;
+    color: #E5E7E8;
+    text-decoration: none;
+}
+
+.header-container ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*content-1 or hero*/
+.content-1-segment-1 h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 800;
+
+}
+
+
+
+/*content-2 or information*/
+.content-2-segment-1{
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+}
+
+
+/*content-3 or quote*/
+.content-3-container{
+    background-color: #E5E7EB;
+}
+
+.content-3-container p:first-child{
+    font-size: 36px;
+    font-style: light italic;
+    color: #1F2937;
+}
+
+/*general*/
+button{
+    background-color: #3882F6;
+    color: white;
+
+}
