@@ -1,17 +1,37 @@
 /*body*/
+body{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}/* is it neccesary?*/
 
+.container{
+    padding: 5px 500px;
+    flex: 1;
+}
+
+.header-container,.footer-container{
+    flex: initial;
+}
 
 
 /* header-container or hero*/
-
 .hero{
     background-color: #1F2937;
     color: white;
 }
 
+.header-container{
+    display: flex;
+    justify-content: space-between;/*why seems like no effect*/
+    align-items: center;
+}
+
 .header-container p{
     font-size: 24px;
     color: #F9FAF8;
+    width: 250px;
+    height: 30px;
 }
 
 .header-container a{
@@ -24,29 +44,91 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+    width: 400px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*content-1 or hero*/
-.content-1-segment-1 h1 {
+.content-1-container{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.content-1-container *{
+    flex: 1;
+}
+
+.content-1-segment-1 p{
+    margin: 0;
+    font-size: large;
+}
+.content-1-segment-2{
+    background-color: grey;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-1-segment-1 p:first-child {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 800;
-
 }
 
-
-
 /*content-2 or information*/
+/*.content-2-container{
+    display: flex;
+}*//*is it redundant setting flex vertically*/
+
+.content-2-container{
+    padding-bottom: 100px;
+}
+
 .content-2-segment-1{
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
+    text-align: center;
 }
 
+.content-2-segment-2{
+    display: flex;
+    font-size: large;
+    justify-content: space-between;
+
+}
+
+.img-container{
+   width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    border: 3px solid rgb(0, 153, 255);
+}
+.information-container{
+    width: 150px;
+    height: auto;
+}
 
 /*content-3 or quote*/
 .content-3-container{
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.content-3-container p:last-child{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: right;
+    margin-top: 15px;
 }
 
 .content-3-container p:first-child{
@@ -55,9 +137,55 @@
     color: #1F2937;
 }
 
-/*general*/
-button{
+.content-2-container,.content-3-container{
+    padding-left: 600px;
+    padding-right: 600px;
+}
+
+/*content 4 or call-to-action*/
+.content-4-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.content-4{
     background-color: #3882F6;
     color: white;
+    padding: 20px 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-4 button{
+    margin-right: auto;
+}
+
+/*footer*/
+.footer-container{
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*general*/
+button{
+    box-sizing: content-box;
+    background-color: #3882F6;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-style: "times-new-roman";
+    border: 0;
+    padding: 10px 20px;
+    
 
 }
+
